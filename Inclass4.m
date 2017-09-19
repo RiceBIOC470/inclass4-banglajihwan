@@ -1,3 +1,5 @@
+%AW. Everything here works. 1/1. but see my comment below. 
+
 %Inclass assignment 4. Due at the start of class on 9/12/17
 
 %1. (a) Write code that makes a file with the words "Random numbers 1" on its
@@ -5,6 +7,10 @@
 %2" on its own line, then 9 lines with 7 random numbers each. (b) Write code
 %that reads only the first line of random numbers in the file and stores
 %them as numbers in an array. 
+
+%AW: this works but is very convoluted. Why write the values to a file, and then read them in and then write them to another file?
+% you should just directly write them to the file without creating other files. 
+
 rand_mat = rand(10,13);
 filename = 'rand_mat.txt';
 dlmwrite(filename, rand_mat, ' ') 
